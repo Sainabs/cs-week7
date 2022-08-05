@@ -1,0 +1,32 @@
+Results for the extraLargeArray
+insert 763.502 ms
+append 9.215375 ms
+
+
+Results for the tinyArray
+insert 14.542 μs
+append 41.625 μs
+
+Results for the smallArray
+insert 21.708 μs
+append 47.709 μs
+
+Results for the mediumArray
+insert 121.667 μs
+append 78.458 μs
+
+Results for the largeArray
+insert 8.023083 ms
+append 528.125 μs
+
+
+Results for the extraLargeArray
+insert 767.946 ms
+append 2.293041 ms
+
+
+// note on 2
+// The timing results for the extraLargeArray is that insert takes longer than append, 
+// since doublerAppend uses .push() and doublerInsert uses .unshift(),
+//  the  .push() doublerAppend takes less time to run than .unshift(),
+//  which cycles around everytime in order to run.
